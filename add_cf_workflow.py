@@ -1,0 +1,34 @@
+import os
+
+os.makedirs("/Users/yuan/life/海外市场/ads/remotesalary-matrix/.github/workflows", exist_ok=True)
+workflow = """name: Build Static Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate Static Matrix
+        run: |
+          python3 build_data.py
+          python3 generate_site.py
+      - name: Commit dist if needed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -f dist/
+          git commit -m "chore: auto-build dist pages" || exit 0
+          git push
+"""
+with open("/Users/yuan/life/海外市场/ads/remotesalary-matrix/.github/workflows/build.yml", "w") as f:
+    f.write(workflow)
+
+print("Workflow created!")

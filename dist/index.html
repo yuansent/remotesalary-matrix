@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RemoteSalary Matrix — Global Tech Salary Benchmarks & Contractor Compliance 2026</title>
+  <meta name="description" content="Compare remote developer salaries, contractor taxes, and EOR legal compliance across 25 countries. Save 50-80% on US tech talent legally.">
+  <link rel="canonical" href="https://salary.apexcraftweb.com/">
+  <meta property="og:title" content="RemoteSalary Matrix — Global Tech Salary Benchmarks & Contractor Compliance 2026">
+  <meta property="og:description" content="Compare remote developer salaries, contractor taxes, and EOR legal compliance across 25 countries. Save 50-80% on US tech talent legally.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://salary.apexcraftweb.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@alexyuan01">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #0b0f17; color: #e2e8f0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    .glass-card { background: rgba(18, 24, 38, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+    .brand-gradient { background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+  <header class="border-b border-slate-800 bg-slate-900/60 sticky top-0 z-50 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 text-xl font-bold tracking-tight">
+        <span class="p-1.5 rounded-lg bg-indigo-600/20 text-indigo-400 border border-indigo-500/30">🌐</span>
+        <span class="text-white">Remote<span class="text-indigo-400">Salary</span> Matrix</span>
+      </a>
+      <nav class="flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="/#calculator" class="hover:text-white transition">Calculator</a>
+        <a href="/#roles" class="hover:text-white transition">Tech Roles</a>
+        <a href="/#countries" class="hover:text-white transition">Talent Hubs</a>
+        <a href="https://gumroad.com" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium transition shadow-sm">Legal Hiring Kit</a>
+      </nav>
+    </div>
+  </header>
+  <main class="flex-grow">
+
+<section class="max-w-6xl mx-auto px-4 pt-16 pb-12 text-center">
+  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/80 border border-indigo-800/60 text-indigo-300 text-xs font-medium mb-6">
+    <span>✨</span> Q1 2026 Global Payroll & Contractor Benchmark Audited
+  </div>
+  <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+    Hire Top Global Engineers.<br>
+    <span class="brand-gradient">Save 55% to 80% Without Legal Risk.</span>
+  </h1>
+  <p class="max-w-2xl mx-auto text-slate-400 text-base md:text-lg mb-10 leading-relaxed">
+    US tech salaries top $165k+. Compare real local market rates, contractor flat-tax regimes, and mandatory EOR compliance laws across Poland, Romania, Brazil, India, and 21 other talent capitals.
+  </p>
+
+  <!-- Interactive Hiring Calculator -->
+  <div id="calculator" class="max-w-3xl mx-auto glass-card rounded-2xl p-6 md:p-8 text-left shadow-2xl border border-slate-700/60 mb-16">
+    <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+      <h3 class="text-lg font-bold text-white flex items-center gap-2">
+        <span>⚡</span> Interactive Remote Salary & Savings Calculator
+      </h3>
+      <span class="text-xs text-slate-400">Live 2026 Rates</span>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div>
+        <label class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wider">Select Tech Role</label>
+        <select id="roleSelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-500">
+          <option value="senior-frontend-engineer" data-base="155000">Senior Frontend Engineer (US Base: $155,000/yr)</option><option value="senior-backend-engineer" data-base="165000">Senior Backend Engineer (US Base: $165,000/yr)</option><option value="full-stack-developer" data-base="140000">Full Stack Developer (US Base: $140,000/yr)</option><option value="devops-cloud-architect" data-base="170000">DevOps & Cloud Architect (US Base: $170,000/yr)</option><option value="ai-machine-learning-engineer" data-base="185000">AI / Machine Learning Engineer (US Base: $185,000/yr)</option><option value="mobile-engineer-ios-android" data-base="150000">Mobile Engineer (iOS/Android) (US Base: $150,000/yr)</option><option value="senior-product-designer" data-base="135000">Senior Product Designer (UI/UX) (US Base: $135,000/yr)</option><option value="engineering-manager" data-base="195000">Engineering Manager (US Base: $195,000/yr)</option><option value="data-engineer" data-base="150000">Data Engineer (US Base: $150,000/yr)</option><option value="qa-automation-lead" data-base="125000">QA Automation Lead (US Base: $125,000/yr)</option><option value="security-engineer" data-base="165000">Application Security Engineer (US Base: $165,000/yr)</option><option value="technical-product-manager" data-base="150000">Technical Product Manager (US Base: $150,000/yr)</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wider">Select Destination Country</label>
+        <select id="countrySelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-500">
+          <option value="PL" data-ratio="0.48" data-risk="Low (B2B flat tax common)" data-eor="Deel / Remote.com ($599/mo)">Poland (Market Ratio: 48%)</option><option value="RO" data-ratio="0.42" data-risk="Low (SRL micro-company)" data-eor="Deel ($599/mo)">Romania (Market Ratio: 42%)</option><option value="UA" data-ratio="0.38" data-risk="Medium (Diia City contractor model)" data-eor="Deel ($599/mo)">Ukraine (Market Ratio: 38%)</option><option value="PT" data-ratio="0.45" data-risk="Medium (Worker misclassification scrutiny)" data-eor="Remote.com / Deel">Portugal (Market Ratio: 45%)</option><option value="ES" data-ratio="0.5" data-risk="High (Strict autonomo falso labor laws)" data-eor="Remote.com ($599/mo)">Spain (Market Ratio: 50%)</option><option value="DE" data-ratio="0.75" data-risk="Very High (Scheinselbständigkeit / Fake Freelance)" data-eor="WorkMotion / Remote.com">Germany (Market Ratio: 75%)</option><option value="GB" data-ratio="0.78" data-risk="High (IR35 off-payroll rules)" data-eor="Remote.com / Deel">United Kingdom (Market Ratio: 78%)</option><option value="IN" data-ratio="0.28" data-risk="Low (Private Limited / Sole Prop B2B)" data-eor="Deel / Multiplier ($300/mo)">India (Market Ratio: 28%)</option><option value="BR" data-ratio="0.38" data-risk="High (CLT vs PJ labor courts favor workers)" data-eor="Deel ($599/mo) / Remote">Brazil (Market Ratio: 38%)</option><option value="AR" data-ratio="0.32" data-risk="Low (USD cross-border wire preferred)" data-eor="Ontop / Deel">Argentina (Market Ratio: 32%)</option><option value="CO" data-ratio="0.3" data-risk="Medium (Prestación de Servicios contract)" data-eor="Deel / Ontop">Colombia (Market Ratio: 30%)</option><option value="MX" data-ratio="0.4" data-risk="High (2021 Subcontracting Reform ban)" data-eor="Deel / Remote.com">Mexico (Market Ratio: 40%)</option><option value="PH" data-ratio="0.24" data-risk="Low (BPO independent contractor)" data-eor="Deel / Multiplier ($300/mo)">Philippines (Market Ratio: 24%)</option><option value="VN" data-ratio="0.25" data-risk="Medium (Individual business household)" data-eor="Multiplier / Deel">Vietnam (Market Ratio: 25%)</option><option value="NG" data-ratio="0.2" data-risk="Low (Direct FX Contractor)" data-eor="Deel / Raenest">Nigeria (Market Ratio: 20%)</option><option value="KE" data-ratio="0.22" data-risk="Low (Silicon Savannah talent)" data-eor="Deel / Remote">Kenya (Market Ratio: 22%)</option><option value="ZA" data-ratio="0.35" data-risk="Medium (Section 200A labor presumption)" data-eor="Deel / Remote">South Africa (Market Ratio: 35%)</option><option value="EG" data-ratio="0.22" data-risk="Low (Freelancer tech boom)" data-eor="Deel / Multiplier">Egypt (Market Ratio: 22%)</option><option value="PK" data-ratio="0.18" data-risk="Low (PSEB 0.25% export tech tax exemption)" data-eor="Deel / Multiplier">Pakistan (Market Ratio: 18%)</option><option value="TR" data-ratio="0.3" data-risk="Medium (Technopark / Sole Prop)" data-eor="Deel">Turkey (Market Ratio: 30%)</option><option value="CA" data-ratio="0.82" data-risk="Medium (CRA employee vs contractor tests)" data-eor="Remote.com / Deel">Canada (Market Ratio: 82%)</option><option value="AU" data-ratio="0.8" data-risk="High (Superannuation guarantee on contractors)" data-eor="Remote.com / Deel">Australia (Market Ratio: 80%)</option><option value="CZ" data-ratio="0.46" data-risk="Medium (Švarcsystém illegal contractor laws)" data-eor="Remote.com / Deel">Czech Republic (Market Ratio: 46%)</option><option value="EE" data-ratio="0.52" data-risk="Low (e-Residency OÜ company model)" data-eor="Xolo / Deel">Estonia (Market Ratio: 52%)</option><option value="TW" data-ratio="0.42" data-risk="Low (Hardware/Software dual talent)" data-eor="Multiplier / Deel">Taiwan (Market Ratio: 42%)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Output Box -->
+    <div class="bg-slate-950/80 rounded-xl p-5 border border-slate-800 grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
+      <div>
+        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Local Salary</div>
+        <div id="outLocal" class="text-xl md:text-2xl font-bold text-indigo-400">$74,400</div>
+        <div class="text-xs text-slate-500">per year</div>
+      </div>
+      <div>
+        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Hourly Rate</div>
+        <div id="outHourly" class="text-xl md:text-2xl font-bold text-sky-400">$35.77</div>
+        <div class="text-xs text-slate-500">USD / hr</div>
+      </div>
+      <div>
+        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Annual Savings</div>
+        <div id="outSavings" class="text-xl md:text-2xl font-bold text-emerald-400">$80,600</div>
+        <div id="outPct" class="text-xs text-emerald-500">52% saved vs US</div>
+      </div>
+      <div>
+        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Contract Risk</div>
+        <div id="outRisk" class="text-sm font-semibold text-slate-300 mt-1">Low (B2B flat tax)</div>
+        <div id="outEor" class="text-[10px] text-slate-500 mt-0.5">Deel / Remote.com</div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-between">
+      <span class="text-xs text-slate-400">Need bulletproof cross-border contracts & IP transfer deed?</span>
+      <a id="compareLink" href="/compare/senior-frontend-engineer-in-PL.html" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold rounded-lg transition">
+        View Legal Breakdown &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Matrix Directory Section -->
+<section id="roles" class="max-w-6xl mx-auto px-4 py-12">
+  <div class="flex items-center justify-between mb-8">
+    <div>
+      <h2 class="text-2xl font-bold text-white">Browse By Engineering Role</h2>
+      <p class="text-slate-400 text-sm">US Baseline vs Global Pay Benchmarks across 12 disciplines</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+    
+    <a href="/role/senior-frontend-engineer.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">Senior Frontend Engineer</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$155,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">React</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">TypeScript</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Next.js</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Performance</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+    <a href="/role/senior-backend-engineer.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">Senior Backend Engineer</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$165,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Go</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Python</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Distributed Systems</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">PostgreSQL</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+    <a href="/role/full-stack-developer.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">Full Stack Developer</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$140,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Node.js</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">React</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Cloud Infrastructure</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">API Design</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+    <a href="/role/devops-cloud-architect.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">DevOps & Cloud Architect</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$170,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Kubernetes</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">AWS</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Terraform</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">CI/CD</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+    <a href="/role/ai-machine-learning-engineer.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">AI / Machine Learning Engineer</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$185,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">PyTorch</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">LLM Fine-tuning</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Vector DBs</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Python</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+    <a href="/role/mobile-engineer-ios-android.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">Mobile Engineer (iOS/Android)</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$150,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">React Native</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Flutter</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Swift</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Kotlin</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+    <a href="/role/senior-product-designer.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">Senior Product Designer (UI/UX)</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$135,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Figma</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Design Systems</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">User Research</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Prototyping</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+    <a href="/role/engineering-manager.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">Engineering Manager</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$195,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Team Leadership</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Agile</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Hiring</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Tech Strategy</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+    <a href="/role/data-engineer.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">Data Engineer</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$150,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Snowflake</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">dbt</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Airflow</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">SQL / Python</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+    <a href="/role/qa-automation-lead.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">QA Automation Lead</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$125,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Playwright</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Cypress</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">End-to-End Testing</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">CI Automation</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+    <a href="/role/security-engineer.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">Application Security Engineer</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$165,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">AppSec</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Penetration Testing</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">SOC 2</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Cloud Security</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+    <a href="/role/technical-product-manager.html" class="glass-card rounded-xl p-5 hover:border-indigo-500/50 transition group">
+      <div class="flex items-center justify-between mb-3">
+        <h4 class="text-white font-semibold group-hover:text-indigo-400 transition text-base">Technical Product Manager</h4>
+        <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">$150,000/yr</span>
+      </div>
+      <div class="flex flex-wrap gap-1.5 mb-3">
+        <span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Product Discovery</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">PRD Writing</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Data Analysis</span><span class="text-[11px] bg-slate-900 border border-slate-800 text-slate-400 px-2 py-0.5 rounded">Roadmapping</span>
+      </div>
+      <div class="text-xs text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition duration-200">
+        Compare 25 Countries &rarr;
+      </div>
+    </a>
+    
+  </div>
+</section>
+
+<section id="countries" class="max-w-6xl mx-auto px-4 py-12">
+  <div class="flex items-center justify-between mb-8">
+    <div>
+      <h2 class="text-2xl font-bold text-white">Top 25 Global Talent Markets</h2>
+      <p class="text-slate-400 text-sm">Labor cost ratio, B2B contractor tax rates, and EOR misclassification threat levels</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+    
+    <a href="/country/PL.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Poland</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">48%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">B2B Flat Tax (Ryczałt 12%) </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/RO.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Romania</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">42%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Micro-Enterprise B2B </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/UA.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Ukraine</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">38%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Diia City Gig-Contract </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/PT.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Portugal</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">45%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Recibos Verdes (Sole Trader) </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/ES.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Spain</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">High</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">50%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Autónomo </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/DE.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Germany</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Very</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">75%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Strict EOR </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/GB.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">United Kingdom</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">High</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">78%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Outside IR35 Contract</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/IN.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">India</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">28%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Independent Consultancy Agreement </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/BR.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Brazil</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">High</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">38%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">PJ (Pessoa Jurídica B2B) </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/AR.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Argentina</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">32%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Monotributo / USD Contract</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/CO.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Colombia</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">30%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Prestación de Servicios </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/MX.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Mexico</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">High</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">40%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">RESICO Independent Contract</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/PH.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Philippines</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">24%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Independent Contract</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/VN.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Vietnam</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">25%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Service Contract </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/NG.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Nigeria</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">20%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">B2B Contract</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/KE.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Kenya</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">22%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Independent Consultant Agreement</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/ZA.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">South Africa</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">35%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Independent Contract</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/EG.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Egypt</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">22%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">USD Offsh</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/PK.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Pakistan</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">18%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">IT Exp</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/TR.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Turkey</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">30%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Sole Trader B2B </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/CA.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Canada</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">82%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Inc</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/AU.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Australia</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">High</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">80%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">ABN Contract</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/CZ.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Czech Republic</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">46%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Trade License (Živnostenský list) </span></div>
+      </div>
+    </a>
+    
+    <a href="/country/EE.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Estonia</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">52%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Estonian OÜ (0% c</span></div>
+      </div>
+    </a>
+    
+    <a href="/country/TW.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-white font-medium text-sm">Taiwan</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+      </div>
+      <div class="text-xs text-slate-400 space-y-1">
+        <div>Cost vs US: <span class="text-slate-200 font-semibold">42%</span></div>
+        <div>Contract: <span class="text-slate-300 truncate block">Independent Service Contract</span></div>
+      </div>
+    </a>
+    
+  </div>
+</section>
+
+<script>
+  const roles = [{"slug": "senior-frontend-engineer", "title": "Senior Frontend Engineer", "us_base": 155000, "skills": ["React", "TypeScript", "Next.js", "Performance"]}, {"slug": "senior-backend-engineer", "title": "Senior Backend Engineer", "us_base": 165000, "skills": ["Go", "Python", "Distributed Systems", "PostgreSQL"]}, {"slug": "full-stack-developer", "title": "Full Stack Developer", "us_base": 140000, "skills": ["Node.js", "React", "Cloud Infrastructure", "API Design"]}, {"slug": "devops-cloud-architect", "title": "DevOps & Cloud Architect", "us_base": 170000, "skills": ["Kubernetes", "AWS", "Terraform", "CI/CD"]}, {"slug": "ai-machine-learning-engineer", "title": "AI / Machine Learning Engineer", "us_base": 185000, "skills": ["PyTorch", "LLM Fine-tuning", "Vector DBs", "Python"]}, {"slug": "mobile-engineer-ios-android", "title": "Mobile Engineer (iOS/Android)", "us_base": 150000, "skills": ["React Native", "Flutter", "Swift", "Kotlin"]}, {"slug": "senior-product-designer", "title": "Senior Product Designer (UI/UX)", "us_base": 135000, "skills": ["Figma", "Design Systems", "User Research", "Prototyping"]}, {"slug": "engineering-manager", "title": "Engineering Manager", "us_base": 195000, "skills": ["Team Leadership", "Agile", "Hiring", "Tech Strategy"]}, {"slug": "data-engineer", "title": "Data Engineer", "us_base": 150000, "skills": ["Snowflake", "dbt", "Airflow", "SQL / Python"]}, {"slug": "qa-automation-lead", "title": "QA Automation Lead", "us_base": 125000, "skills": ["Playwright", "Cypress", "End-to-End Testing", "CI Automation"]}, {"slug": "security-engineer", "title": "Application Security Engineer", "us_base": 165000, "skills": ["AppSec", "Penetration Testing", "SOC 2", "Cloud Security"]}, {"slug": "technical-product-manager", "title": "Technical Product Manager", "us_base": 150000, "skills": ["Product Discovery", "PRD Writing", "Data Analysis", "Roadmapping"]}];
+  const countries = [{"code": "PL", "country": "Poland", "currency": "PLN", "rate_to_usd": 0.25, "ratio": 0.48, "tax_pct": 19, "eor_risk": "Low (B2B flat tax common)", "contract_mode": "B2B Flat Tax (Rycza\u0142t 12%) or EOR (Deel/Remote)", "ip_protection": "EU Directive Strong IP assignment", "best_eor": "Deel / Remote.com ($599/mo)"}, {"code": "RO", "country": "Romania", "currency": "RON", "rate_to_usd": 0.22, "ratio": 0.42, "tax_pct": 16, "eor_risk": "Low (SRL micro-company)", "contract_mode": "Micro-Enterprise B2B or EOR", "ip_protection": "EU High Standard", "best_eor": "Deel ($599/mo)"}, {"code": "UA", "country": "Ukraine", "currency": "UAH", "rate_to_usd": 0.024, "ratio": 0.38, "tax_pct": 5, "eor_risk": "Medium (Diia City contractor model)", "contract_mode": "Diia City Gig-Contract or Private Entrepreneur (FOP 5%)", "ip_protection": "Specific IP transfer deeds mandatory", "best_eor": "Deel ($599/mo)"}, {"code": "PT", "country": "Portugal", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.45, "tax_pct": 25, "eor_risk": "Medium (Worker misclassification scrutiny)", "contract_mode": "Recibos Verdes (Sole Trader) or EOR", "ip_protection": "EU Standard", "best_eor": "Remote.com / Deel"}, {"code": "ES", "country": "Spain", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.5, "tax_pct": 28, "eor_risk": "High (Strict autonomo falso labor laws)", "contract_mode": "Aut\u00f3nomo or Mandatory EOR for exclusive full-time", "ip_protection": "EU Strict IP Protection", "best_eor": "Remote.com ($599/mo)"}, {"code": "DE", "country": "Germany", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.75, "tax_pct": 38, "eor_risk": "Very High (Scheinselbst\u00e4ndigkeit / Fake Freelance)", "contract_mode": "Strict EOR or Local GmbH Subsidary", "ip_protection": "Strict Moral Rights retention (UrhG)", "best_eor": "WorkMotion / Remote.com"}, {"code": "GB", "country": "United Kingdom", "currency": "GBP", "rate_to_usd": 1.28, "ratio": 0.78, "tax_pct": 32, "eor_risk": "High (IR35 off-payroll rules)", "contract_mode": "Outside IR35 Contractor or EOR / Direct PAYE", "ip_protection": "UK Copyright & Patents Act", "best_eor": "Remote.com / Deel"}, {"code": "IN", "country": "India", "currency": "INR", "rate_to_usd": 0.012, "ratio": 0.28, "tax_pct": 20, "eor_risk": "Low (Private Limited / Sole Prop B2B)", "contract_mode": "Independent Consultancy Agreement or EOR", "ip_protection": "Indian Copyright Act requires express written assignment", "best_eor": "Deel / Multiplier ($300/mo)"}, {"code": "BR", "country": "Brazil", "currency": "BRL", "rate_to_usd": 0.17, "ratio": 0.38, "tax_pct": 15, "eor_risk": "High (CLT vs PJ labor courts favor workers)", "contract_mode": "PJ (Pessoa Jur\u00eddica B2B) or CLT via EOR", "ip_protection": "Explicit IP assignment clause in English + Portuguese", "best_eor": "Deel ($599/mo) / Remote"}, {"code": "AR", "country": "Argentina", "currency": "ARS", "rate_to_usd": 0.001, "ratio": 0.32, "tax_pct": 12, "eor_risk": "Low (USD cross-border wire preferred)", "contract_mode": "Monotributo / USD Contractor Agreement", "ip_protection": "Civil Code IP Assignment", "best_eor": "Ontop / Deel"}, {"code": "CO", "country": "Colombia", "currency": "COP", "rate_to_usd": 0.00025, "ratio": 0.3, "tax_pct": 18, "eor_risk": "Medium (Prestaci\u00f3n de Servicios contract)", "contract_mode": "Prestaci\u00f3n de Servicios or EOR", "ip_protection": "Decisi\u00f3n Andina 351 IP Compliance", "best_eor": "Deel / Ontop"}, {"code": "MX", "country": "Mexico", "currency": "MXN", "rate_to_usd": 0.051, "ratio": 0.4, "tax_pct": 20, "eor_risk": "High (2021 Subcontracting Reform ban)", "contract_mode": "RESICO Independent Contractor or REPSE EOR", "ip_protection": "Federal Copyright Law requires recorded transfer", "best_eor": "Deel / Remote.com"}, {"code": "PH", "country": "Philippines", "currency": "PHP", "rate_to_usd": 0.017, "ratio": 0.24, "tax_pct": 15, "eor_risk": "Low (BPO independent contractor)", "contract_mode": "Independent Contractor or EOR (13th Month Pay mandatory)", "ip_protection": "Intellectual Property Code of Philippines", "best_eor": "Deel / Multiplier ($300/mo)"}, {"code": "VN", "country": "Vietnam", "currency": "VND", "rate_to_usd": 3.9e-05, "ratio": 0.25, "tax_pct": 10, "eor_risk": "Medium (Individual business household)", "contract_mode": "Service Contract or EOR", "ip_protection": "Intellectual Property Law 2005", "best_eor": "Multiplier / Deel"}, {"code": "NG", "country": "Nigeria", "currency": "NGN", "rate_to_usd": 0.00065, "ratio": 0.2, "tax_pct": 12, "eor_risk": "Low (Direct FX Contractor)", "contract_mode": "B2B Contractor Agreement paid in USD/USDC", "ip_protection": "Copyright Act 2022", "best_eor": "Deel / Raenest"}, {"code": "KE", "country": "Kenya", "currency": "KES", "rate_to_usd": 0.0077, "ratio": 0.22, "tax_pct": 15, "eor_risk": "Low (Silicon Savannah talent)", "contract_mode": "Independent Consultant Agreement", "ip_protection": "Industrial Property Act", "best_eor": "Deel / Remote"}, {"code": "ZA", "country": "South Africa", "currency": "ZAR", "rate_to_usd": 0.055, "ratio": 0.35, "tax_pct": 26, "eor_risk": "Medium (Section 200A labor presumption)", "contract_mode": "Independent Contractor or EOR", "ip_protection": "Copyright Act 1978", "best_eor": "Deel / Remote"}, {"code": "EG", "country": "Egypt", "currency": "EGP", "rate_to_usd": 0.02, "ratio": 0.22, "tax_pct": 14, "eor_risk": "Low (Freelancer tech boom)", "contract_mode": "USD Offshore Contractor", "ip_protection": "Law No. 82 of 2002", "best_eor": "Deel / Multiplier"}, {"code": "PK", "country": "Pakistan", "currency": "PKR", "rate_to_usd": 0.0036, "ratio": 0.18, "tax_pct": 5, "eor_risk": "Low (PSEB 0.25% export tech tax exemption)", "contract_mode": "IT Export Contractor Agreement", "ip_protection": "Copyright Ordinance 1962", "best_eor": "Deel / Multiplier"}, {"code": "TR", "country": "Turkey", "currency": "TRY", "rate_to_usd": 0.028, "ratio": 0.3, "tax_pct": 20, "eor_risk": "Medium (Technopark / Sole Prop)", "contract_mode": "Sole Trader B2B or EOR", "ip_protection": "IP Law No. 6769", "best_eor": "Deel"}, {"code": "CA", "country": "Canada", "currency": "CAD", "rate_to_usd": 0.72, "ratio": 0.82, "tax_pct": 33, "eor_risk": "Medium (CRA employee vs contractor tests)", "contract_mode": "Incorporated Contractor (Personal Services Corp) or EOR", "ip_protection": "Patent Act / Copyright Act", "best_eor": "Remote.com / Deel"}, {"code": "AU", "country": "Australia", "currency": "AUD", "rate_to_usd": 0.65, "ratio": 0.8, "tax_pct": 32, "eor_risk": "High (Superannuation guarantee on contractors)", "contract_mode": "ABN Contractor (Subject to Super) or EOR", "ip_protection": "Copyright Act 1968", "best_eor": "Remote.com / Deel"}, {"code": "CZ", "country": "Czech Republic", "currency": "CZK", "rate_to_usd": 0.043, "ratio": 0.46, "tax_pct": 15, "eor_risk": "Medium (\u0160varcsyst\u00e9m illegal contractor laws)", "contract_mode": "Trade License (\u017divnostensk\u00fd list) or EOR", "ip_protection": "EU Civil Code IP assignment", "best_eor": "Remote.com / Deel"}, {"code": "EE", "country": "Estonia", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.52, "tax_pct": 20, "eor_risk": "Low (e-Residency O\u00dc company model)", "contract_mode": "Estonian O\u00dc (0% corporate tax on reinvested profit)", "ip_protection": "EU Leading Digital IP Standard", "best_eor": "Xolo / Deel"}, {"code": "TW", "country": "Taiwan", "currency": "TWD", "rate_to_usd": 0.031, "ratio": 0.42, "tax_pct": 18, "eor_risk": "Low (Hardware/Software dual talent)", "contract_mode": "Independent Service Contractor or EOR", "ip_protection": "Copyright Act of Taiwan", "best_eor": "Multiplier / Deel"}];
+
+  const roleEl = document.getElementById('roleSelect');
+  const countryEl = document.getElementById('countrySelect');
+  const outLocal = document.getElementById('outLocal');
+  const outHourly = document.getElementById('outHourly');
+  const outSavings = document.getElementById('outSavings');
+  const outPct = document.getElementById('outPct');
+  const outRisk = document.getElementById('outRisk');
+  const outEor = document.getElementById('outEor');
+  const compareLink = document.getElementById('compareLink');
+
+  function updateCalc() {
+    const rSlug = roleEl.value;
+    const cCode = countryEl.value;
+    const r = roles.find(x => x.slug === rSlug);
+    const c = countries.find(x => x.code === cCode);
+
+    const localAnnual = Math.round(r.us_base * c.ratio);
+    const hourly = (localAnnual / 2080).toFixed(2);
+    const savings = r.us_base - localAnnual;
+    const pct = Math.round((savings / r.us_base) * 100);
+
+    outLocal.innerText = '$' + localAnnual.toLocaleString();
+    outHourly.innerText = '$' + hourly;
+    outSavings.innerText = '$' + savings.toLocaleString();
+    outPct.innerText = pct + '% saved vs US';
+    outRisk.innerText = c.eor_risk;
+    outEor.innerText = c.best_eor;
+    compareLink.href = '/compare/' + rSlug + '-in-' + cCode + '.html';
+  }
+
+  roleEl.addEventListener('change', updateCalc);
+  countryEl.addEventListener('change', updateCalc);
+  updateCalc();
+</script>
+
+  </main>
+  <footer class="border-t border-slate-800/80 bg-slate-950 py-12 mt-20 text-slate-400 text-sm">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <div class="flex items-center gap-2 text-base font-bold text-white mb-3">
+          <span>🌐</span> RemoteSalary Matrix
+        </div>
+        <p class="text-xs leading-relaxed text-slate-500">
+          The verified benchmark for global engineering salaries, employer of record compliance, contractor misclassification avoidance, and tax models.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-white text-xs font-semibold uppercase tracking-wider mb-3">Top Engineering Roles</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="/role/senior-frontend-engineer.html" class="hover:text-slate-200">Senior Frontend Engineer</a></li>
+          <li><a href="/role/senior-backend-engineer.html" class="hover:text-slate-200">Senior Backend Engineer</a></li>
+          <li><a href="/role/ai-machine-learning-engineer.html" class="hover:text-slate-200">AI / Machine Learning Engineer</a></li>
+          <li><a href="/role/devops-cloud-architect.html" class="hover:text-slate-200">DevOps & Cloud Architect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white text-xs font-semibold uppercase tracking-wider mb-3">Prime Talent Hubs</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="/country/PL.html" class="hover:text-slate-200">Poland Tech Salaries & B2B</a></li>
+          <li><a href="/country/RO.html" class="hover:text-slate-200">Romania Micro-Enterprise Guide</a></li>
+          <li><a href="/country/BR.html" class="hover:text-slate-200">Brazil CLT vs PJ Compliance</a></li>
+          <li><a href="/country/IN.html" class="hover:text-slate-200">India Independent Consultancy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white text-xs font-semibold uppercase tracking-wider mb-3">Sister Matrix Tools</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="https://nomad.apexcraftweb.com" target="_blank" class="hover:text-indigo-400">NomadMatrix — Digital Nomad Visas</a></li>
+          <li><a href="https://stackcost.apexcraftweb.com" target="_blank" class="hover:text-indigo-400">StackCost Matrix — Cloud Hidden Traps</a></li>
+          <li><a href="https://x.com/alexyuan01" target="_blank" class="hover:text-sky-400">Follow on X (@alexyuan01)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 pt-6 border-t border-slate-900 text-center text-xs text-slate-600">
+      &copy; 2026 RemoteSalary Matrix. All data audited for Q1 2026 international payroll & contractor regulations.
+    </div>
+  </footer>
+</body>
+</html>
