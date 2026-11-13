@@ -58,6 +58,9 @@ def render_header(title, desc, canonical):
     </div>
   </header>
   <main class="flex-grow">
+    <div class="max-w-6xl mx-auto px-4 py-4 text-sm text-slate-300 border-b border-slate-800">
+      <strong>How estimates work:</strong> annual pay = a manually selected US role baseline × a fixed country multiplier. Monthly pay = annual pay ÷ 12; hourly pay = annual pay ÷ 2,080. These are illustrative USD budgets, not survey results or current job offers. Tax and contractor notes are simplified references, not legal determinations.
+    </div>
 """
 
 def render_footer():
@@ -70,7 +73,7 @@ def render_footer():
           <span>🌐</span> RemoteSalary Matrix
         </div>
         <p class="text-xs leading-relaxed text-slate-500">
-          The verified benchmark for global engineering salaries, employer of record compliance, contractor misclassification avoidance, and tax models.
+          Illustrative global hiring budgets using fixed country multipliers. These estimates are not surveyed salaries or legal advice.
         </p>
       </div>
       <div>
@@ -101,7 +104,7 @@ def render_footer():
       </div>
     </div>
     <div class="max-w-6xl mx-auto px-4 pt-6 border-t border-slate-900 text-center text-xs text-slate-600">
-      &copy; 2026 RemoteSalary Matrix. All data audited for Q1 2026 international payroll & contractor regulations.
+      &copy; 2026 RemoteSalary Matrix. Illustrative estimates, not audited market data. Confirm local compensation and regulations independently.
     </div>
   </footer>
 </body>
@@ -116,11 +119,11 @@ home_html = render_header(
 ) + f"""
 <section class="max-w-6xl mx-auto px-4 pt-16 pb-12 text-center">
   <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/80 border border-indigo-800/60 text-indigo-300 text-xs font-medium mb-6">
-    <span>✨</span> Q1 2026 Global Payroll & Contractor Benchmark Audited
+    <span>✨</span> Illustrative Hiring Budget Model
   </div>
   <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
     Hire Top Global Engineers.<br>
-    <span class="brand-gradient">Save 55% to 80% Without Legal Risk.</span>
+    <span class="brand-gradient">Explore Estimated Hiring Budgets.</span>
   </h1>
   <p class="max-w-2xl mx-auto text-slate-400 text-base md:text-lg mb-10 leading-relaxed">
     US tech salaries top $165k+. Compare real local market rates, contractor flat-tax regimes, and mandatory EOR compliance laws across Poland, Romania, Brazil, India, and 21 other talent capitals.
@@ -411,7 +414,7 @@ for b in matrix:
 
       <div class="glass-card rounded-2xl p-6 md:p-8 border border-slate-700/80 mb-8 shadow-2xl">
         <div class="flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950 border border-indigo-800/50 text-indigo-300 text-xs w-max mb-4">
-          <span>🎯</span> Verified Q1 2026 Data
+          <span>🎯</span> Formula-Based Budget Estimate
         </div>
         <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-4">
           Hiring a {b['role_title']} in {b['country_name']}
@@ -464,8 +467,8 @@ for b in matrix:
         <!-- Conversion / Monetization CTA -->
         <div class="p-5 rounded-xl bg-gradient-to-r from-indigo-950 to-slate-900 border border-indigo-700/60 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
-            <div class="text-white font-bold text-sm mb-1">Need a Compliant Global Contractor Agreement?</div>
-            <div class="text-xs text-slate-400">Download lawyer-vetted B2B service contracts + IP assignment deed templates for {b['country_name']}.</div>
+            <div class="text-white font-bold text-sm mb-1">Looking for Contractor Agreement Examples?</div>
+            <div class="text-xs text-slate-400">General contract and IP assignment examples. Not lawyer-reviewed or tailored to {b['country_name']}; obtain local legal advice.</div>
           </div>
           <a href="https://2683573618956.gumroad.com/l/rytzeh" target="_blank" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold rounded-lg shadow-md transition whitespace-nowrap">
             Get Legal Hiring Kit ($49) &rarr;
