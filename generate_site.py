@@ -2,7 +2,7 @@ import json
 import os
 import shutil
 
-dist_dir = "/Users/yuan/life/海外市场/ads/remotesalary-matrix/dist"
+dist_dir = "./dist"
 if os.path.exists(dist_dir):
     shutil.rmtree(dist_dir)
 os.makedirs(dist_dir, exist_ok=True)
@@ -10,13 +10,13 @@ os.makedirs(f"{dist_dir}/role", exist_ok=True)
 os.makedirs(f"{dist_dir}/country", exist_ok=True)
 os.makedirs(f"{dist_dir}/compare", exist_ok=True)
 
-with open("/Users/yuan/life/海外市场/ads/remotesalary-matrix/data/matrix.json") as f:
+with open("./data/matrix.json") as f:
     matrix = json.load(f)
 
-with open("/Users/yuan/life/海外市场/ads/remotesalary-matrix/data/roles.json") as f:
+with open("./data/roles.json") as f:
     roles = json.load(f)
 
-with open("/Users/yuan/life/海外市场/ads/remotesalary-matrix/data/countries.json") as f:
+with open("./data/countries.json") as f:
     countries = json.load(f)
 
 # Common Header & Footer

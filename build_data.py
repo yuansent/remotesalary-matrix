@@ -224,13 +224,13 @@ for r in roles:
             "skills": r["skills"]
         })
 
-with open("/Users/yuan/life/海外市场/ads/remotesalary-matrix/data/matrix.json", "w") as f:
+with open("./data/matrix.json", "w") as f:
     json.dump(matrix, f, indent=2)
 
-with open("/Users/yuan/life/海外市场/ads/remotesalary-matrix/data/roles.json", "w") as f:
+with open("./data/roles.json", "w") as f:
     json.dump(roles, f, indent=2)
 
-with open("/Users/yuan/life/海外市场/ads/remotesalary-matrix/data/countries.json", "w") as f:
+with open("./data/countries.json", "w") as f:
     json.dump(countries, f, indent=2)
 
 print(f"Generated {len(matrix)} role x country salary benchmarks successfully!")
