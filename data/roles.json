@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "senior-frontend-engineer",
+    "title": "Senior Frontend Engineer",
+    "us_base": 155000,
+    "skills": [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Performance"
+    ]
+  },
+  {
+    "slug": "senior-backend-engineer",
+    "title": "Senior Backend Engineer",
+    "us_base": 165000,
+    "skills": [
+      "Go",
+      "Python",
+      "Distributed Systems",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "slug": "full-stack-developer",
+    "title": "Full Stack Developer",
+    "us_base": 140000,
+    "skills": [
+      "Node.js",
+      "React",
+      "Cloud Infrastructure",
+      "API Design"
+    ]
+  },
+  {
+    "slug": "devops-cloud-architect",
+    "title": "DevOps & Cloud Architect",
+    "us_base": 170000,
+    "skills": [
+      "Kubernetes",
+      "AWS",
+      "Terraform",
+      "CI/CD"
+    ]
+  },
+  {
+    "slug": "ai-machine-learning-engineer",
+    "title": "AI / Machine Learning Engineer",
+    "us_base": 185000,
+    "skills": [
+      "PyTorch",
+      "LLM Fine-tuning",
+      "Vector DBs",
+      "Python"
+    ]
+  },
+  {
+    "slug": "mobile-engineer-ios-android",
+    "title": "Mobile Engineer (iOS/Android)",
+    "us_base": 150000,
+    "skills": [
+      "React Native",
+      "Flutter",
+      "Swift",
+      "Kotlin"
+    ]
+  },
+  {
+    "slug": "senior-product-designer",
+    "title": "Senior Product Designer (UI/UX)",
+    "us_base": 135000,
+    "skills": [
+      "Figma",
+      "Design Systems",
+      "User Research",
+      "Prototyping"
+    ]
+  },
+  {
+    "slug": "engineering-manager",
+    "title": "Engineering Manager",
+    "us_base": 195000,
+    "skills": [
+      "Team Leadership",
+      "Agile",
+      "Hiring",
+      "Tech Strategy"
+    ]
+  },
+  {
+    "slug": "data-engineer",
+    "title": "Data Engineer",
+    "us_base": 150000,
+    "skills": [
+      "Snowflake",
+      "dbt",
+      "Airflow",
+      "SQL / Python"
+    ]
+  },
+  {
+    "slug": "qa-automation-lead",
+    "title": "QA Automation Lead",
+    "us_base": 125000,
+    "skills": [
+      "Playwright",
+      "Cypress",
+      "End-to-End Testing",
+      "CI Automation"
+    ]
+  },
+  {
+    "slug": "security-engineer",
+    "title": "Application Security Engineer",
+    "us_base": 165000,
+    "skills": [
+      "AppSec",
+      "Penetration Testing",
+      "SOC 2",
+      "Cloud Security"
+    ]
+  },
+  {
+    "slug": "technical-product-manager",
+    "title": "Technical Product Manager",
+    "us_base": 150000,
+    "skills": [
+      "Product Discovery",
+      "PRD Writing",
+      "Data Analysis",
+      "Roadmapping"
+    ]
+  }
+]
