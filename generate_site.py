@@ -19,6 +19,10 @@ with open("./data/roles.json") as f:
 with open("./data/countries.json") as f:
     countries = json.load(f)
 
+# Product audit: no evidence supports the historic country risk grades.
+for row in countries + matrix:
+    row['eor_risk'] = 'Not assessed'
+
 # Common Header & Footer
 def render_header(title, desc, canonical):
     return f"""<!DOCTYPE html>
@@ -130,7 +134,7 @@ home_html = render_header(
     <span class="brand-gradient">Explore Estimated Hiring Budgets.</span>
   </h1>
   <p class="max-w-2xl mx-auto text-slate-400 text-base md:text-lg mb-10 leading-relaxed">
-    US tech salaries top $165k+. Compare real local market rates, contractor flat-tax regimes, and mandatory EOR compliance laws across Poland, Romania, Brazil, India, and 21 other talent capitals.
+    Compare illustrative hiring budgets using a selected US baseline and fixed country multipliers. These estimates are not observed market salaries. Country legal and tax notes require independent verification.
   </p>
 
   <!-- Interactive Hiring Calculator -->
@@ -139,7 +143,7 @@ home_html = render_header(
       <h3 class="text-lg font-bold text-white flex items-center gap-2">
         <span>⚡</span> Interactive Remote Salary & Savings Calculator
       </h3>
-      <span class="text-xs text-slate-400">Live 2026 Rates</span>
+      <span class="text-xs text-slate-400">Fixed assumptions · no live data feed</span>
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -152,7 +156,7 @@ home_html = render_header(
       <div>
         <label class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wider">Select Destination Country</label>
         <select id="countrySelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-500">
-          {"".join([f'<option value="{c["code"]}" data-ratio="{c["ratio"]}" data-risk="{c["eor_risk"]}" data-eor="{c["best_eor"]}">{c["country"]} (Market Ratio: {int(c["ratio"]*100)}%)</option>' for c in countries])}
+          {"".join([f'<option value="{c["code"]}" data-ratio="{c["ratio"]}" data-risk="{c["eor_risk"]}" data-eor="{c["best_eor"]}">{c["country"]} (Assumed Ratio: {int(c["ratio"]*100)}%)</option>' for c in countries])}
         </select>
       </div>
     </div>
@@ -160,7 +164,7 @@ home_html = render_header(
     <!-- Output Box -->
     <div class="bg-slate-950/80 rounded-xl p-5 border border-slate-800 grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
       <div>
-        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Local Salary</div>
+        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Estimated Pay Budget</div>
         <div id="outLocal" class="text-xl md:text-2xl font-bold text-indigo-400">$74,400</div>
         <div class="text-xs text-slate-500">per year</div>
       </div>
@@ -170,21 +174,21 @@ home_html = render_header(
         <div class="text-xs text-slate-500">USD / hr</div>
       </div>
       <div>
-        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Annual Savings</div>
+        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Illustrative Annual Difference</div>
         <div id="outSavings" class="text-xl md:text-2xl font-bold text-emerald-400">$80,600</div>
-        <div id="outPct" class="text-xs text-emerald-500">52% saved vs US</div>
+        <div id="outPct" class="text-xs text-emerald-500">52% below selected US baseline</div>
       </div>
       <div>
-        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Contract Risk</div>
-        <div id="outRisk" class="text-sm font-semibold text-slate-300 mt-1">Low (B2B flat tax)</div>
+        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Legal Review</div>
+        <div id="outRisk" class="text-sm font-semibold text-slate-300 mt-1">Not assessed</div>
         <div id="outEor" class="text-[10px] text-slate-500 mt-0.5">Deel / Remote.com</div>
       </div>
     </div>
 
     <div class="flex items-center justify-between">
-      <span class="text-xs text-slate-400">Need bulletproof cross-border contracts & IP transfer deed?</span>
+      <span class="text-xs text-slate-400">Review the assumptions and seek local professional advice.</span>
       <a id="compareLink" href="/compare/senior-frontend-engineer-in-PL.html" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold rounded-lg transition">
-        View Legal Breakdown &rarr;
+        View reference notes &rarr;
       </a>
     </div>
   </div>
@@ -220,7 +224,7 @@ home_html = render_header(
   <div class="flex items-center justify-between mb-8">
     <div>
       <h2 class="text-2xl font-bold text-white">Top 25 Global Talent Markets</h2>
-      <p class="text-slate-400 text-sm">Labor cost ratio, B2B contractor tax rates, and EOR misclassification threat levels</p>
+      <p class="text-slate-400 text-sm">Illustrative cost multipliers and unverified country reference notes</p>
     </div>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -267,8 +271,8 @@ home_html = render_header(
     outLocal.innerText = '$' + localAnnual.toLocaleString();
     outHourly.innerText = '$' + hourly;
     outSavings.innerText = '$' + savings.toLocaleString();
-    outPct.innerText = pct + '% saved vs US';
-    outRisk.innerText = c.eor_risk;
+    outPct.innerText = pct + '% below selected US baseline';
+    outRisk.innerText = 'Not assessed';
     outEor.innerText = c.best_eor;
     compareLink.href = '/compare/' + rSlug + '-in-' + cCode + '.html';
   }}
@@ -306,7 +310,7 @@ for r in roles:
               <th class="py-3 px-4">Country</th>
               <th class="py-3 px-4">Local Annual (USD)</th>
               <th class="py-3 px-4">Hourly Rate</th>
-              <th class="py-3 px-4">Annual Savings</th>
+              <th class="py-3 px-4">Illustrative Annual Difference</th>
               <th class="py-3 px-4">EOR / Misclass Risk</th>
               <th class="py-3 px-4">Action</th>
             </tr>
@@ -379,7 +383,7 @@ for c in countries:
               <th class="py-3 px-4">Role</th>
               <th class="py-3 px-4">Local Annual</th>
               <th class="py-3 px-4">Hourly</th>
-              <th class="py-3 px-4">Annual Savings vs US</th>
+              <th class="py-3 px-4">Illustrative Annual Difference vs US</th>
               <th class="py-3 px-4">Details</th>
             </tr>
           </thead>
@@ -456,7 +460,7 @@ for b in matrix:
         <div class="space-y-4 text-sm text-slate-300 mb-8">
           <div class="p-4 rounded-lg bg-slate-900/60 border border-slate-800">
             <span class="text-indigo-400 font-semibold block mb-1">Contractor Hiring vs Misclassification:</span>
-            <span>{b['contract_mode']}. Misclassification audit threat: <strong class="text-white">{b['eor_risk']}</strong>.</span>
+            <span>{b['contract_mode']}. Classification risk has not been independently assessed. Historical note: <strong class="text-white">{b['eor_risk']}</strong>.</span>
           </div>
           <div class="p-4 rounded-lg bg-slate-900/60 border border-slate-800">
             <span class="text-indigo-400 font-semibold block mb-1">Intellectual Property (IP) Protection:</span>
@@ -464,7 +468,7 @@ for b in matrix:
           </div>
           <div class="p-4 rounded-lg bg-slate-900/60 border border-slate-800">
             <span class="text-indigo-400 font-semibold block mb-1">Recommended Employer of Record (EOR):</span>
-            <span>If you require full-time exclusivity without B2B contractor risks, use <strong class="text-white">{b['best_eor']}</strong>.</span>
+            <span>An EOR does not remove every employment risk. Research provider options with local advice. Historical provider reference: <strong class="text-white">{b['best_eor']}</strong>.</span>
           </div>
         </div>
 

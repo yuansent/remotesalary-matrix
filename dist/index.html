@@ -52,7 +52,7 @@
     <span class="brand-gradient">Explore Estimated Hiring Budgets.</span>
   </h1>
   <p class="max-w-2xl mx-auto text-slate-400 text-base md:text-lg mb-10 leading-relaxed">
-    US tech salaries top $165k+. Compare real local market rates, contractor flat-tax regimes, and mandatory EOR compliance laws across Poland, Romania, Brazil, India, and 21 other talent capitals.
+    Compare illustrative hiring budgets using a selected US baseline and fixed country multipliers. These estimates are not observed market salaries. Country legal and tax notes require independent verification.
   </p>
 
   <!-- Interactive Hiring Calculator -->
@@ -61,7 +61,7 @@
       <h3 class="text-lg font-bold text-white flex items-center gap-2">
         <span>⚡</span> Interactive Remote Salary & Savings Calculator
       </h3>
-      <span class="text-xs text-slate-400">Live 2026 Rates</span>
+      <span class="text-xs text-slate-400">Fixed assumptions · no live data feed</span>
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -74,7 +74,7 @@
       <div>
         <label class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wider">Select Destination Country</label>
         <select id="countrySelect" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-indigo-500">
-          <option value="PL" data-ratio="0.48" data-risk="Low (B2B flat tax common)" data-eor="Deel / Remote.com ($599/mo)">Poland (Market Ratio: 48%)</option><option value="RO" data-ratio="0.42" data-risk="Low (SRL micro-company)" data-eor="Deel ($599/mo)">Romania (Market Ratio: 42%)</option><option value="UA" data-ratio="0.38" data-risk="Medium (Diia City contractor model)" data-eor="Deel ($599/mo)">Ukraine (Market Ratio: 38%)</option><option value="PT" data-ratio="0.45" data-risk="Medium (Worker misclassification scrutiny)" data-eor="Remote.com / Deel">Portugal (Market Ratio: 45%)</option><option value="ES" data-ratio="0.5" data-risk="High (Strict autonomo falso labor laws)" data-eor="Remote.com ($599/mo)">Spain (Market Ratio: 50%)</option><option value="DE" data-ratio="0.75" data-risk="Very High (Scheinselbständigkeit / Fake Freelance)" data-eor="WorkMotion / Remote.com">Germany (Market Ratio: 75%)</option><option value="GB" data-ratio="0.78" data-risk="High (IR35 off-payroll rules)" data-eor="Remote.com / Deel">United Kingdom (Market Ratio: 78%)</option><option value="IN" data-ratio="0.28" data-risk="Low (Private Limited / Sole Prop B2B)" data-eor="Deel / Multiplier ($300/mo)">India (Market Ratio: 28%)</option><option value="BR" data-ratio="0.38" data-risk="High (CLT vs PJ labor courts favor workers)" data-eor="Deel ($599/mo) / Remote">Brazil (Market Ratio: 38%)</option><option value="AR" data-ratio="0.32" data-risk="Low (USD cross-border wire preferred)" data-eor="Ontop / Deel">Argentina (Market Ratio: 32%)</option><option value="CO" data-ratio="0.3" data-risk="Medium (Prestación de Servicios contract)" data-eor="Deel / Ontop">Colombia (Market Ratio: 30%)</option><option value="MX" data-ratio="0.4" data-risk="High (2021 Subcontracting Reform ban)" data-eor="Deel / Remote.com">Mexico (Market Ratio: 40%)</option><option value="PH" data-ratio="0.24" data-risk="Low (BPO independent contractor)" data-eor="Deel / Multiplier ($300/mo)">Philippines (Market Ratio: 24%)</option><option value="VN" data-ratio="0.25" data-risk="Medium (Individual business household)" data-eor="Multiplier / Deel">Vietnam (Market Ratio: 25%)</option><option value="NG" data-ratio="0.2" data-risk="Low (Direct FX Contractor)" data-eor="Deel / Raenest">Nigeria (Market Ratio: 20%)</option><option value="KE" data-ratio="0.22" data-risk="Low (Silicon Savannah talent)" data-eor="Deel / Remote">Kenya (Market Ratio: 22%)</option><option value="ZA" data-ratio="0.35" data-risk="Medium (Section 200A labor presumption)" data-eor="Deel / Remote">South Africa (Market Ratio: 35%)</option><option value="EG" data-ratio="0.22" data-risk="Low (Freelancer tech boom)" data-eor="Deel / Multiplier">Egypt (Market Ratio: 22%)</option><option value="PK" data-ratio="0.18" data-risk="Low (PSEB 0.25% export tech tax exemption)" data-eor="Deel / Multiplier">Pakistan (Market Ratio: 18%)</option><option value="TR" data-ratio="0.3" data-risk="Medium (Technopark / Sole Prop)" data-eor="Deel">Turkey (Market Ratio: 30%)</option><option value="CA" data-ratio="0.82" data-risk="Medium (CRA employee vs contractor tests)" data-eor="Remote.com / Deel">Canada (Market Ratio: 82%)</option><option value="AU" data-ratio="0.8" data-risk="High (Superannuation guarantee on contractors)" data-eor="Remote.com / Deel">Australia (Market Ratio: 80%)</option><option value="CZ" data-ratio="0.46" data-risk="Medium (Švarcsystém illegal contractor laws)" data-eor="Remote.com / Deel">Czech Republic (Market Ratio: 46%)</option><option value="EE" data-ratio="0.52" data-risk="Low (e-Residency OÜ company model)" data-eor="Xolo / Deel">Estonia (Market Ratio: 52%)</option><option value="TW" data-ratio="0.42" data-risk="Low (Hardware/Software dual talent)" data-eor="Multiplier / Deel">Taiwan (Market Ratio: 42%)</option>
+          <option value="PL" data-ratio="0.48" data-risk="Not assessed" data-eor="Deel / Remote.com ($599/mo)">Poland (Assumed Ratio: 48%)</option><option value="RO" data-ratio="0.42" data-risk="Not assessed" data-eor="Deel ($599/mo)">Romania (Assumed Ratio: 42%)</option><option value="UA" data-ratio="0.38" data-risk="Not assessed" data-eor="Deel ($599/mo)">Ukraine (Assumed Ratio: 38%)</option><option value="PT" data-ratio="0.45" data-risk="Not assessed" data-eor="Remote.com / Deel">Portugal (Assumed Ratio: 45%)</option><option value="ES" data-ratio="0.5" data-risk="Not assessed" data-eor="Remote.com ($599/mo)">Spain (Assumed Ratio: 50%)</option><option value="DE" data-ratio="0.75" data-risk="Not assessed" data-eor="WorkMotion / Remote.com">Germany (Assumed Ratio: 75%)</option><option value="GB" data-ratio="0.78" data-risk="Not assessed" data-eor="Remote.com / Deel">United Kingdom (Assumed Ratio: 78%)</option><option value="IN" data-ratio="0.28" data-risk="Not assessed" data-eor="Deel / Multiplier ($300/mo)">India (Assumed Ratio: 28%)</option><option value="BR" data-ratio="0.38" data-risk="Not assessed" data-eor="Deel ($599/mo) / Remote">Brazil (Assumed Ratio: 38%)</option><option value="AR" data-ratio="0.32" data-risk="Not assessed" data-eor="Ontop / Deel">Argentina (Assumed Ratio: 32%)</option><option value="CO" data-ratio="0.3" data-risk="Not assessed" data-eor="Deel / Ontop">Colombia (Assumed Ratio: 30%)</option><option value="MX" data-ratio="0.4" data-risk="Not assessed" data-eor="Deel / Remote.com">Mexico (Assumed Ratio: 40%)</option><option value="PH" data-ratio="0.24" data-risk="Not assessed" data-eor="Deel / Multiplier ($300/mo)">Philippines (Assumed Ratio: 24%)</option><option value="VN" data-ratio="0.25" data-risk="Not assessed" data-eor="Multiplier / Deel">Vietnam (Assumed Ratio: 25%)</option><option value="NG" data-ratio="0.2" data-risk="Not assessed" data-eor="Deel / Raenest">Nigeria (Assumed Ratio: 20%)</option><option value="KE" data-ratio="0.22" data-risk="Not assessed" data-eor="Deel / Remote">Kenya (Assumed Ratio: 22%)</option><option value="ZA" data-ratio="0.35" data-risk="Not assessed" data-eor="Deel / Remote">South Africa (Assumed Ratio: 35%)</option><option value="EG" data-ratio="0.22" data-risk="Not assessed" data-eor="Deel / Multiplier">Egypt (Assumed Ratio: 22%)</option><option value="PK" data-ratio="0.18" data-risk="Not assessed" data-eor="Deel / Multiplier">Pakistan (Assumed Ratio: 18%)</option><option value="TR" data-ratio="0.3" data-risk="Not assessed" data-eor="Deel">Turkey (Assumed Ratio: 30%)</option><option value="CA" data-ratio="0.82" data-risk="Not assessed" data-eor="Remote.com / Deel">Canada (Assumed Ratio: 82%)</option><option value="AU" data-ratio="0.8" data-risk="Not assessed" data-eor="Remote.com / Deel">Australia (Assumed Ratio: 80%)</option><option value="CZ" data-ratio="0.46" data-risk="Not assessed" data-eor="Remote.com / Deel">Czech Republic (Assumed Ratio: 46%)</option><option value="EE" data-ratio="0.52" data-risk="Not assessed" data-eor="Xolo / Deel">Estonia (Assumed Ratio: 52%)</option><option value="TW" data-ratio="0.42" data-risk="Not assessed" data-eor="Multiplier / Deel">Taiwan (Assumed Ratio: 42%)</option>
         </select>
       </div>
     </div>
@@ -82,7 +82,7 @@
     <!-- Output Box -->
     <div class="bg-slate-950/80 rounded-xl p-5 border border-slate-800 grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
       <div>
-        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Local Salary</div>
+        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Estimated Pay Budget</div>
         <div id="outLocal" class="text-xl md:text-2xl font-bold text-indigo-400">$74,400</div>
         <div class="text-xs text-slate-500">per year</div>
       </div>
@@ -92,21 +92,21 @@
         <div class="text-xs text-slate-500">USD / hr</div>
       </div>
       <div>
-        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Annual Savings</div>
+        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Illustrative Annual Difference</div>
         <div id="outSavings" class="text-xl md:text-2xl font-bold text-emerald-400">$80,600</div>
-        <div id="outPct" class="text-xs text-emerald-500">52% saved vs US</div>
+        <div id="outPct" class="text-xs text-emerald-500">52% below selected US baseline</div>
       </div>
       <div>
-        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Contract Risk</div>
-        <div id="outRisk" class="text-sm font-semibold text-slate-300 mt-1">Low (B2B flat tax)</div>
+        <div class="text-xs text-slate-500 uppercase tracking-wider mb-1">Legal Review</div>
+        <div id="outRisk" class="text-sm font-semibold text-slate-300 mt-1">Not assessed</div>
         <div id="outEor" class="text-[10px] text-slate-500 mt-0.5">Deel / Remote.com</div>
       </div>
     </div>
 
     <div class="flex items-center justify-between">
-      <span class="text-xs text-slate-400">Need bulletproof cross-border contracts & IP transfer deed?</span>
+      <span class="text-xs text-slate-400">Review the assumptions and seek local professional advice.</span>
       <a id="compareLink" href="/compare/senior-frontend-engineer-in-PL.html" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold rounded-lg transition">
-        View Legal Breakdown &rarr;
+        View reference notes &rarr;
       </a>
     </div>
   </div>
@@ -285,7 +285,7 @@
   <div class="flex items-center justify-between mb-8">
     <div>
       <h2 class="text-2xl font-bold text-white">Top 25 Global Talent Markets</h2>
-      <p class="text-slate-400 text-sm">Labor cost ratio, B2B contractor tax rates, and EOR misclassification threat levels</p>
+      <p class="text-slate-400 text-sm">Illustrative cost multipliers and unverified country reference notes</p>
     </div>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
@@ -293,7 +293,7 @@
     <a href="/country/PL.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Poland</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">48%</span></div>
@@ -304,7 +304,7 @@
     <a href="/country/RO.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Romania</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">42%</span></div>
@@ -315,7 +315,7 @@
     <a href="/country/UA.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Ukraine</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">38%</span></div>
@@ -326,7 +326,7 @@
     <a href="/country/PT.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Portugal</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">45%</span></div>
@@ -337,7 +337,7 @@
     <a href="/country/ES.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Spain</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">High</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">50%</span></div>
@@ -348,7 +348,7 @@
     <a href="/country/DE.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Germany</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Very</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">75%</span></div>
@@ -359,7 +359,7 @@
     <a href="/country/GB.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">United Kingdom</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">High</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">78%</span></div>
@@ -370,7 +370,7 @@
     <a href="/country/IN.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">India</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">28%</span></div>
@@ -381,7 +381,7 @@
     <a href="/country/BR.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Brazil</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">High</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">38%</span></div>
@@ -392,7 +392,7 @@
     <a href="/country/AR.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Argentina</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">32%</span></div>
@@ -403,7 +403,7 @@
     <a href="/country/CO.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Colombia</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">30%</span></div>
@@ -414,7 +414,7 @@
     <a href="/country/MX.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Mexico</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">High</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">40%</span></div>
@@ -425,7 +425,7 @@
     <a href="/country/PH.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Philippines</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">24%</span></div>
@@ -436,7 +436,7 @@
     <a href="/country/VN.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Vietnam</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">25%</span></div>
@@ -447,7 +447,7 @@
     <a href="/country/NG.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Nigeria</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">20%</span></div>
@@ -458,7 +458,7 @@
     <a href="/country/KE.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Kenya</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">22%</span></div>
@@ -469,7 +469,7 @@
     <a href="/country/ZA.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">South Africa</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">35%</span></div>
@@ -480,7 +480,7 @@
     <a href="/country/EG.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Egypt</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">22%</span></div>
@@ -491,7 +491,7 @@
     <a href="/country/PK.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Pakistan</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">18%</span></div>
@@ -502,7 +502,7 @@
     <a href="/country/TR.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Turkey</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">30%</span></div>
@@ -513,7 +513,7 @@
     <a href="/country/CA.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Canada</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">82%</span></div>
@@ -524,7 +524,7 @@
     <a href="/country/AU.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Australia</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">High</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">80%</span></div>
@@ -535,7 +535,7 @@
     <a href="/country/CZ.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Czech Republic</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800/40">Medium</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">46%</span></div>
@@ -546,7 +546,7 @@
     <a href="/country/EE.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Estonia</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">52%</span></div>
@@ -557,7 +557,7 @@
     <a href="/country/TW.html" class="glass-card rounded-xl p-4 hover:border-indigo-500/50 transition">
       <div class="flex items-center justify-between mb-2">
         <span class="text-white font-medium text-sm">Taiwan</span>
-        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-800/40">Low</span>
+        <span class="text-xs font-mono px-1.5 py-0.5 rounded bg-rose-950 text-rose-400 border border-rose-800/40">Not</span>
       </div>
       <div class="text-xs text-slate-400 space-y-1">
         <div>Cost vs US: <span class="text-slate-200 font-semibold">42%</span></div>
@@ -570,7 +570,7 @@
 
 <script>
   const roles = [{"slug": "senior-frontend-engineer", "title": "Senior Frontend Engineer", "us_base": 155000, "skills": ["React", "TypeScript", "Next.js", "Performance"]}, {"slug": "senior-backend-engineer", "title": "Senior Backend Engineer", "us_base": 165000, "skills": ["Go", "Python", "Distributed Systems", "PostgreSQL"]}, {"slug": "full-stack-developer", "title": "Full Stack Developer", "us_base": 140000, "skills": ["Node.js", "React", "Cloud Infrastructure", "API Design"]}, {"slug": "devops-cloud-architect", "title": "DevOps & Cloud Architect", "us_base": 170000, "skills": ["Kubernetes", "AWS", "Terraform", "CI/CD"]}, {"slug": "ai-machine-learning-engineer", "title": "AI / Machine Learning Engineer", "us_base": 185000, "skills": ["PyTorch", "LLM Fine-tuning", "Vector DBs", "Python"]}, {"slug": "mobile-engineer-ios-android", "title": "Mobile Engineer (iOS/Android)", "us_base": 150000, "skills": ["React Native", "Flutter", "Swift", "Kotlin"]}, {"slug": "senior-product-designer", "title": "Senior Product Designer (UI/UX)", "us_base": 135000, "skills": ["Figma", "Design Systems", "User Research", "Prototyping"]}, {"slug": "engineering-manager", "title": "Engineering Manager", "us_base": 195000, "skills": ["Team Leadership", "Agile", "Hiring", "Tech Strategy"]}, {"slug": "data-engineer", "title": "Data Engineer", "us_base": 150000, "skills": ["Snowflake", "dbt", "Airflow", "SQL / Python"]}, {"slug": "qa-automation-lead", "title": "QA Automation Lead", "us_base": 125000, "skills": ["Playwright", "Cypress", "End-to-End Testing", "CI Automation"]}, {"slug": "security-engineer", "title": "Application Security Engineer", "us_base": 165000, "skills": ["AppSec", "Penetration Testing", "SOC 2", "Cloud Security"]}, {"slug": "technical-product-manager", "title": "Technical Product Manager", "us_base": 150000, "skills": ["Product Discovery", "PRD Writing", "Data Analysis", "Roadmapping"]}];
-  const countries = [{"code": "PL", "country": "Poland", "currency": "PLN", "rate_to_usd": 0.25, "ratio": 0.48, "tax_pct": 19, "eor_risk": "Low (B2B flat tax common)", "contract_mode": "B2B Flat Tax (Rycza\u0142t 12%) or EOR (Deel/Remote)", "ip_protection": "EU Directive Strong IP assignment", "best_eor": "Deel / Remote.com ($599/mo)"}, {"code": "RO", "country": "Romania", "currency": "RON", "rate_to_usd": 0.22, "ratio": 0.42, "tax_pct": 16, "eor_risk": "Low (SRL micro-company)", "contract_mode": "Micro-Enterprise B2B or EOR", "ip_protection": "EU High Standard", "best_eor": "Deel ($599/mo)"}, {"code": "UA", "country": "Ukraine", "currency": "UAH", "rate_to_usd": 0.024, "ratio": 0.38, "tax_pct": 5, "eor_risk": "Medium (Diia City contractor model)", "contract_mode": "Diia City Gig-Contract or Private Entrepreneur (FOP 5%)", "ip_protection": "Specific IP transfer deeds mandatory", "best_eor": "Deel ($599/mo)"}, {"code": "PT", "country": "Portugal", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.45, "tax_pct": 25, "eor_risk": "Medium (Worker misclassification scrutiny)", "contract_mode": "Recibos Verdes (Sole Trader) or EOR", "ip_protection": "EU Standard", "best_eor": "Remote.com / Deel"}, {"code": "ES", "country": "Spain", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.5, "tax_pct": 28, "eor_risk": "High (Strict autonomo falso labor laws)", "contract_mode": "Aut\u00f3nomo or Mandatory EOR for exclusive full-time", "ip_protection": "EU Strict IP Protection", "best_eor": "Remote.com ($599/mo)"}, {"code": "DE", "country": "Germany", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.75, "tax_pct": 38, "eor_risk": "Very High (Scheinselbst\u00e4ndigkeit / Fake Freelance)", "contract_mode": "Strict EOR or Local GmbH Subsidary", "ip_protection": "Strict Moral Rights retention (UrhG)", "best_eor": "WorkMotion / Remote.com"}, {"code": "GB", "country": "United Kingdom", "currency": "GBP", "rate_to_usd": 1.28, "ratio": 0.78, "tax_pct": 32, "eor_risk": "High (IR35 off-payroll rules)", "contract_mode": "Outside IR35 Contractor or EOR / Direct PAYE", "ip_protection": "UK Copyright & Patents Act", "best_eor": "Remote.com / Deel"}, {"code": "IN", "country": "India", "currency": "INR", "rate_to_usd": 0.012, "ratio": 0.28, "tax_pct": 20, "eor_risk": "Low (Private Limited / Sole Prop B2B)", "contract_mode": "Independent Consultancy Agreement or EOR", "ip_protection": "Indian Copyright Act requires express written assignment", "best_eor": "Deel / Multiplier ($300/mo)"}, {"code": "BR", "country": "Brazil", "currency": "BRL", "rate_to_usd": 0.17, "ratio": 0.38, "tax_pct": 15, "eor_risk": "High (CLT vs PJ labor courts favor workers)", "contract_mode": "PJ (Pessoa Jur\u00eddica B2B) or CLT via EOR", "ip_protection": "Explicit IP assignment clause in English + Portuguese", "best_eor": "Deel ($599/mo) / Remote"}, {"code": "AR", "country": "Argentina", "currency": "ARS", "rate_to_usd": 0.001, "ratio": 0.32, "tax_pct": 12, "eor_risk": "Low (USD cross-border wire preferred)", "contract_mode": "Monotributo / USD Contractor Agreement", "ip_protection": "Civil Code IP Assignment", "best_eor": "Ontop / Deel"}, {"code": "CO", "country": "Colombia", "currency": "COP", "rate_to_usd": 0.00025, "ratio": 0.3, "tax_pct": 18, "eor_risk": "Medium (Prestaci\u00f3n de Servicios contract)", "contract_mode": "Prestaci\u00f3n de Servicios or EOR", "ip_protection": "Decisi\u00f3n Andina 351 IP Compliance", "best_eor": "Deel / Ontop"}, {"code": "MX", "country": "Mexico", "currency": "MXN", "rate_to_usd": 0.051, "ratio": 0.4, "tax_pct": 20, "eor_risk": "High (2021 Subcontracting Reform ban)", "contract_mode": "RESICO Independent Contractor or REPSE EOR", "ip_protection": "Federal Copyright Law requires recorded transfer", "best_eor": "Deel / Remote.com"}, {"code": "PH", "country": "Philippines", "currency": "PHP", "rate_to_usd": 0.017, "ratio": 0.24, "tax_pct": 15, "eor_risk": "Low (BPO independent contractor)", "contract_mode": "Independent Contractor or EOR (13th Month Pay mandatory)", "ip_protection": "Intellectual Property Code of Philippines", "best_eor": "Deel / Multiplier ($300/mo)"}, {"code": "VN", "country": "Vietnam", "currency": "VND", "rate_to_usd": 3.9e-05, "ratio": 0.25, "tax_pct": 10, "eor_risk": "Medium (Individual business household)", "contract_mode": "Service Contract or EOR", "ip_protection": "Intellectual Property Law 2005", "best_eor": "Multiplier / Deel"}, {"code": "NG", "country": "Nigeria", "currency": "NGN", "rate_to_usd": 0.00065, "ratio": 0.2, "tax_pct": 12, "eor_risk": "Low (Direct FX Contractor)", "contract_mode": "B2B Contractor Agreement paid in USD/USDC", "ip_protection": "Copyright Act 2022", "best_eor": "Deel / Raenest"}, {"code": "KE", "country": "Kenya", "currency": "KES", "rate_to_usd": 0.0077, "ratio": 0.22, "tax_pct": 15, "eor_risk": "Low (Silicon Savannah talent)", "contract_mode": "Independent Consultant Agreement", "ip_protection": "Industrial Property Act", "best_eor": "Deel / Remote"}, {"code": "ZA", "country": "South Africa", "currency": "ZAR", "rate_to_usd": 0.055, "ratio": 0.35, "tax_pct": 26, "eor_risk": "Medium (Section 200A labor presumption)", "contract_mode": "Independent Contractor or EOR", "ip_protection": "Copyright Act 1978", "best_eor": "Deel / Remote"}, {"code": "EG", "country": "Egypt", "currency": "EGP", "rate_to_usd": 0.02, "ratio": 0.22, "tax_pct": 14, "eor_risk": "Low (Freelancer tech boom)", "contract_mode": "USD Offshore Contractor", "ip_protection": "Law No. 82 of 2002", "best_eor": "Deel / Multiplier"}, {"code": "PK", "country": "Pakistan", "currency": "PKR", "rate_to_usd": 0.0036, "ratio": 0.18, "tax_pct": 5, "eor_risk": "Low (PSEB 0.25% export tech tax exemption)", "contract_mode": "IT Export Contractor Agreement", "ip_protection": "Copyright Ordinance 1962", "best_eor": "Deel / Multiplier"}, {"code": "TR", "country": "Turkey", "currency": "TRY", "rate_to_usd": 0.028, "ratio": 0.3, "tax_pct": 20, "eor_risk": "Medium (Technopark / Sole Prop)", "contract_mode": "Sole Trader B2B or EOR", "ip_protection": "IP Law No. 6769", "best_eor": "Deel"}, {"code": "CA", "country": "Canada", "currency": "CAD", "rate_to_usd": 0.72, "ratio": 0.82, "tax_pct": 33, "eor_risk": "Medium (CRA employee vs contractor tests)", "contract_mode": "Incorporated Contractor (Personal Services Corp) or EOR", "ip_protection": "Patent Act / Copyright Act", "best_eor": "Remote.com / Deel"}, {"code": "AU", "country": "Australia", "currency": "AUD", "rate_to_usd": 0.65, "ratio": 0.8, "tax_pct": 32, "eor_risk": "High (Superannuation guarantee on contractors)", "contract_mode": "ABN Contractor (Subject to Super) or EOR", "ip_protection": "Copyright Act 1968", "best_eor": "Remote.com / Deel"}, {"code": "CZ", "country": "Czech Republic", "currency": "CZK", "rate_to_usd": 0.043, "ratio": 0.46, "tax_pct": 15, "eor_risk": "Medium (\u0160varcsyst\u00e9m illegal contractor laws)", "contract_mode": "Trade License (\u017divnostensk\u00fd list) or EOR", "ip_protection": "EU Civil Code IP assignment", "best_eor": "Remote.com / Deel"}, {"code": "EE", "country": "Estonia", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.52, "tax_pct": 20, "eor_risk": "Low (e-Residency O\u00dc company model)", "contract_mode": "Estonian O\u00dc (0% corporate tax on reinvested profit)", "ip_protection": "EU Leading Digital IP Standard", "best_eor": "Xolo / Deel"}, {"code": "TW", "country": "Taiwan", "currency": "TWD", "rate_to_usd": 0.031, "ratio": 0.42, "tax_pct": 18, "eor_risk": "Low (Hardware/Software dual talent)", "contract_mode": "Independent Service Contractor or EOR", "ip_protection": "Copyright Act of Taiwan", "best_eor": "Multiplier / Deel"}];
+  const countries = [{"code": "PL", "country": "Poland", "currency": "PLN", "rate_to_usd": 0.25, "ratio": 0.48, "tax_pct": 19, "eor_risk": "Not assessed", "contract_mode": "B2B Flat Tax (Rycza\u0142t 12%) or EOR (Deel/Remote)", "ip_protection": "EU Directive Strong IP assignment", "best_eor": "Deel / Remote.com ($599/mo)"}, {"code": "RO", "country": "Romania", "currency": "RON", "rate_to_usd": 0.22, "ratio": 0.42, "tax_pct": 16, "eor_risk": "Not assessed", "contract_mode": "Micro-Enterprise B2B or EOR", "ip_protection": "EU High Standard", "best_eor": "Deel ($599/mo)"}, {"code": "UA", "country": "Ukraine", "currency": "UAH", "rate_to_usd": 0.024, "ratio": 0.38, "tax_pct": 5, "eor_risk": "Not assessed", "contract_mode": "Diia City Gig-Contract or Private Entrepreneur (FOP 5%)", "ip_protection": "Specific IP transfer deeds mandatory", "best_eor": "Deel ($599/mo)"}, {"code": "PT", "country": "Portugal", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.45, "tax_pct": 25, "eor_risk": "Not assessed", "contract_mode": "Recibos Verdes (Sole Trader) or EOR", "ip_protection": "EU Standard", "best_eor": "Remote.com / Deel"}, {"code": "ES", "country": "Spain", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.5, "tax_pct": 28, "eor_risk": "Not assessed", "contract_mode": "Aut\u00f3nomo or Mandatory EOR for exclusive full-time", "ip_protection": "EU Strict IP Protection", "best_eor": "Remote.com ($599/mo)"}, {"code": "DE", "country": "Germany", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.75, "tax_pct": 38, "eor_risk": "Not assessed", "contract_mode": "Strict EOR or Local GmbH Subsidary", "ip_protection": "Strict Moral Rights retention (UrhG)", "best_eor": "WorkMotion / Remote.com"}, {"code": "GB", "country": "United Kingdom", "currency": "GBP", "rate_to_usd": 1.28, "ratio": 0.78, "tax_pct": 32, "eor_risk": "Not assessed", "contract_mode": "Outside IR35 Contractor or EOR / Direct PAYE", "ip_protection": "UK Copyright & Patents Act", "best_eor": "Remote.com / Deel"}, {"code": "IN", "country": "India", "currency": "INR", "rate_to_usd": 0.012, "ratio": 0.28, "tax_pct": 20, "eor_risk": "Not assessed", "contract_mode": "Independent Consultancy Agreement or EOR", "ip_protection": "Indian Copyright Act requires express written assignment", "best_eor": "Deel / Multiplier ($300/mo)"}, {"code": "BR", "country": "Brazil", "currency": "BRL", "rate_to_usd": 0.17, "ratio": 0.38, "tax_pct": 15, "eor_risk": "Not assessed", "contract_mode": "PJ (Pessoa Jur\u00eddica B2B) or CLT via EOR", "ip_protection": "Explicit IP assignment clause in English + Portuguese", "best_eor": "Deel ($599/mo) / Remote"}, {"code": "AR", "country": "Argentina", "currency": "ARS", "rate_to_usd": 0.001, "ratio": 0.32, "tax_pct": 12, "eor_risk": "Not assessed", "contract_mode": "Monotributo / USD Contractor Agreement", "ip_protection": "Civil Code IP Assignment", "best_eor": "Ontop / Deel"}, {"code": "CO", "country": "Colombia", "currency": "COP", "rate_to_usd": 0.00025, "ratio": 0.3, "tax_pct": 18, "eor_risk": "Not assessed", "contract_mode": "Prestaci\u00f3n de Servicios or EOR", "ip_protection": "Decisi\u00f3n Andina 351 IP Compliance", "best_eor": "Deel / Ontop"}, {"code": "MX", "country": "Mexico", "currency": "MXN", "rate_to_usd": 0.051, "ratio": 0.4, "tax_pct": 20, "eor_risk": "Not assessed", "contract_mode": "RESICO Independent Contractor or REPSE EOR", "ip_protection": "Federal Copyright Law requires recorded transfer", "best_eor": "Deel / Remote.com"}, {"code": "PH", "country": "Philippines", "currency": "PHP", "rate_to_usd": 0.017, "ratio": 0.24, "tax_pct": 15, "eor_risk": "Not assessed", "contract_mode": "Independent Contractor or EOR (13th Month Pay mandatory)", "ip_protection": "Intellectual Property Code of Philippines", "best_eor": "Deel / Multiplier ($300/mo)"}, {"code": "VN", "country": "Vietnam", "currency": "VND", "rate_to_usd": 3.9e-05, "ratio": 0.25, "tax_pct": 10, "eor_risk": "Not assessed", "contract_mode": "Service Contract or EOR", "ip_protection": "Intellectual Property Law 2005", "best_eor": "Multiplier / Deel"}, {"code": "NG", "country": "Nigeria", "currency": "NGN", "rate_to_usd": 0.00065, "ratio": 0.2, "tax_pct": 12, "eor_risk": "Not assessed", "contract_mode": "B2B Contractor Agreement paid in USD/USDC", "ip_protection": "Copyright Act 2022", "best_eor": "Deel / Raenest"}, {"code": "KE", "country": "Kenya", "currency": "KES", "rate_to_usd": 0.0077, "ratio": 0.22, "tax_pct": 15, "eor_risk": "Not assessed", "contract_mode": "Independent Consultant Agreement", "ip_protection": "Industrial Property Act", "best_eor": "Deel / Remote"}, {"code": "ZA", "country": "South Africa", "currency": "ZAR", "rate_to_usd": 0.055, "ratio": 0.35, "tax_pct": 26, "eor_risk": "Not assessed", "contract_mode": "Independent Contractor or EOR", "ip_protection": "Copyright Act 1978", "best_eor": "Deel / Remote"}, {"code": "EG", "country": "Egypt", "currency": "EGP", "rate_to_usd": 0.02, "ratio": 0.22, "tax_pct": 14, "eor_risk": "Not assessed", "contract_mode": "USD Offshore Contractor", "ip_protection": "Law No. 82 of 2002", "best_eor": "Deel / Multiplier"}, {"code": "PK", "country": "Pakistan", "currency": "PKR", "rate_to_usd": 0.0036, "ratio": 0.18, "tax_pct": 5, "eor_risk": "Not assessed", "contract_mode": "IT Export Contractor Agreement", "ip_protection": "Copyright Ordinance 1962", "best_eor": "Deel / Multiplier"}, {"code": "TR", "country": "Turkey", "currency": "TRY", "rate_to_usd": 0.028, "ratio": 0.3, "tax_pct": 20, "eor_risk": "Not assessed", "contract_mode": "Sole Trader B2B or EOR", "ip_protection": "IP Law No. 6769", "best_eor": "Deel"}, {"code": "CA", "country": "Canada", "currency": "CAD", "rate_to_usd": 0.72, "ratio": 0.82, "tax_pct": 33, "eor_risk": "Not assessed", "contract_mode": "Incorporated Contractor (Personal Services Corp) or EOR", "ip_protection": "Patent Act / Copyright Act", "best_eor": "Remote.com / Deel"}, {"code": "AU", "country": "Australia", "currency": "AUD", "rate_to_usd": 0.65, "ratio": 0.8, "tax_pct": 32, "eor_risk": "Not assessed", "contract_mode": "ABN Contractor (Subject to Super) or EOR", "ip_protection": "Copyright Act 1968", "best_eor": "Remote.com / Deel"}, {"code": "CZ", "country": "Czech Republic", "currency": "CZK", "rate_to_usd": 0.043, "ratio": 0.46, "tax_pct": 15, "eor_risk": "Not assessed", "contract_mode": "Trade License (\u017divnostensk\u00fd list) or EOR", "ip_protection": "EU Civil Code IP assignment", "best_eor": "Remote.com / Deel"}, {"code": "EE", "country": "Estonia", "currency": "EUR", "rate_to_usd": 1.08, "ratio": 0.52, "tax_pct": 20, "eor_risk": "Not assessed", "contract_mode": "Estonian O\u00dc (0% corporate tax on reinvested profit)", "ip_protection": "EU Leading Digital IP Standard", "best_eor": "Xolo / Deel"}, {"code": "TW", "country": "Taiwan", "currency": "TWD", "rate_to_usd": 0.031, "ratio": 0.42, "tax_pct": 18, "eor_risk": "Not assessed", "contract_mode": "Independent Service Contractor or EOR", "ip_protection": "Copyright Act of Taiwan", "best_eor": "Multiplier / Deel"}];
 
   const roleEl = document.getElementById('roleSelect');
   const countryEl = document.getElementById('countrySelect');
@@ -596,8 +596,8 @@
     outLocal.innerText = '$' + localAnnual.toLocaleString();
     outHourly.innerText = '$' + hourly;
     outSavings.innerText = '$' + savings.toLocaleString();
-    outPct.innerText = pct + '% saved vs US';
-    outRisk.innerText = c.eor_risk;
+    outPct.innerText = pct + '% below selected US baseline';
+    outRisk.innerText = 'Not assessed';
     outEor.innerText = c.best_eor;
     compareLink.href = '/compare/' + rSlug + '-in-' + cCode + '.html';
   }
